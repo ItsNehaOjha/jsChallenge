@@ -1,0 +1,257 @@
+body {
+    background: linear-gradient(-40deg, #090e19 68%, #392F69);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container {
+    height: 17rem;
+    width: 23rem;
+    background-color: #212936;
+    padding: 3rem;
+    color: #E5E7EB;
+    border: 1px solid #4D5562;
+    border-radius: 2%;
+}
+.container2 {
+    height: 19rem;
+    width: 23rem;
+    background-color: #212936;
+    padding: 3rem;
+    color: #E5E7EB;
+    border: 1px solid #4D5562;
+    border-radius: 2%;
+}
+.container3 {
+    height: 16rem;
+    width: 22rem;
+    background-color: #212936;
+    padding: 3rem;
+    color: #E5E7EB;
+    border: 1px solid #4D5562;
+    border-radius: 2%;
+}
+
+.container h2 {
+    margin-top: -0.5rem;
+    font-size: 18px;
+    font-weight: 12;
+    margin-bottom: 2rem;
+}
+
+/* page 1 style  */
+
+.form1 label {
+    font-size: 12px;
+    font-weight: 12;
+}
+.form1 input {
+    margin: 8px -2px 19px;
+    height: 25px;
+    width: 96%;
+    background-color: transparent;
+    border: 2px solid #4D5562;
+    border-radius: 12px;
+    padding: 8px;
+    padding-left: 16px;
+    color: #E5E7EB;
+}
+.form1 input::placeholder {
+    margin-left: 32px;
+}
+.form1 input:focus {
+    border: 1px solid #7647e1;
+    outline: none;
+}
+
+/* button */
+.button1 {
+    padding: 12px;
+    width: 7rem;
+    margin-left: 8.1rem;
+    margin-top: 0.2rem;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #7647e1;
+    border: none;
+    color: #E5E7EB;
+    cursor: pointer;
+}
+.button3 {
+    padding: 12px;
+    width: 7rem;
+    margin-left: 7.3rem;
+    margin-top: 2.2rem;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #7647e1;
+    border: none;
+    color: #E5E7EB;
+    cursor: pointer;
+}
+
+/* stepper */
+.pagedot {
+    margin-top: 1rem;
+    display: flex;
+    margin-right: 5rem;
+    align-items: center;
+}
+.pagedot h5 {
+    
+    margin-right: 1.5rem;
+    color: #4D5562;
+    font-size: 9px;
+}
+.pagedot .dot {
+    margin: 5px;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    background-color: #4D5562;
+    transition: ease-in background-color 0.3s;
+}
+a:hover {
+    cursor: pointer;
+}
+
+.pagedot .dot.active {
+    /* padding: 5px      !important; */
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    text-decoration: none;
+    border: 5px solid #342d61;
+    background-color: #743ee4 !important;
+}
+
+/* page 2 */
+.form2 li {
+    margin: 23px 0 14px;
+    height: 25px;
+    width: 96%;
+    background-color: #394050;
+    border: 1px solid #4D5562;
+    border-radius: 12px;
+    padding: 10px;
+    padding-top: 13px;
+    text-align: left;
+    padding-left: 16px;
+    color: #E5E7EB;
+    list-style: none;
+    cursor: pointer;
+}
+.form2 li:hover {
+    background-color: #7647e1;
+}
+.font2 {
+    margin-top: -0.5rem;
+    font-weight: normal;
+}
+
+.form2 li.selected {
+    background-color: #7647e1;  
+    color: white;               
+    cursor: pointer;
+}
+
+#errorMessages {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: inherit;  
+}
+
+
+.form2 #errorMessages.error {
+    color: #ff2727 !important;
+    margin-top: -1.2rem !important;
+    margin-bottom: -0.5rem !important;
+}
+/* page 3 */
+.font{
+    margin-top: -1rem;
+    font-size: 20px;
+    font-weight: normal;
+}
+.form3 {
+    font-size: 14px;
+    font-weight: 550;
+}
+.form-row {
+    display: flex;
+}
+.topicClass {
+    margin-top: 1rem;
+}
+.topicClass li {
+    margin-top: 1rem;
+}
+label {
+    padding-right: 0.5rem;
+    color: #A1A1A9;
+}
+.ans {
+    margin-top: 0rem;
+    color: #E5E7EB;
+}
+
+/* responsive styles */
+.form1 input, .form2 li, .form3 input, .form3 select {
+    width: 94%; 
+}
+@media screen and (max-width: 600px) {
+    .container, .container3 {
+        width: 65%;
+        padding: 1.5rem;
+        height: 19rem;
+    }
+    .container2{
+        width: 72%;
+        padding: 1.5rem;
+        height: 21rem;
+    }
+    .font {
+        margin-top: 1rem;
+        font-size: 19px;
+        font-weight: normal;
+    }
+    .form3 {
+        font-size: 13px;
+        font-weight: 550;
+    }
+
+    .button3{
+        padding: 11px;
+        width: 7rem;
+        margin-left: 5rem;
+        margin-top: 2.2rem;
+    }
+    .container .container2 h2{
+        margin-top: 0.7rem;
+    }
+    .form1 input, .form2 li, .form3 input, .form3 select {
+        font-size: 14px;
+    }
+
+    .button1 {
+        font-size: 16px;
+        padding: 9px;
+        
+        margin-left: 33%; /* Center button horizontally */
+    }
+
+    .pagedot h5 {
+        font-size: 12px;
+    }
+
+    .pagedot .dot {
+        height: 8px;
+        width: 8px;
+    }
+}
+
+
